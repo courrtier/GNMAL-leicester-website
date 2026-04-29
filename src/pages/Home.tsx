@@ -1,12 +1,10 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
+import {
+  ArrowRight,
   ChevronRight,
-  ShieldCheck, 
+  ShieldCheck,
   Heart,
-  Users,
-  Compass,
   ArrowUpRight
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
@@ -72,19 +70,19 @@ export default function Home() {
                 title: "ThriveAbility",
                 desc: "Mentorship and CPD workshops designed to elevate your clinical practice and career trajectory.",
                 link: "/programs",
-                img: "https://images.unsplash.com/photo-1576091160550-2173bdb999ef?q=80&w=2070&auto=format&fit=crop"
+                img: "https://images.pexels.com/photos/5722166/pexels-photo-5722166.jpeg?auto=compress&cs=tinysrgb&w=1600"
               },
               {
                 title: "Thrive At Home",
                 desc: "A dedicated welfare fund and peer support network for members and their families in Leicester.",
                 link: "/about",
-                img: "https://images.unsplash.com/photo-1521791136364-798a7bc0d262?q=80&w=2070&auto=format&fit=crop"
+                img: "https://images.pexels.com/photos/6097985/pexels-photo-6097985.jpeg?auto=compress&cs=tinysrgb&w=1600"
               },
               {
                 title: "Our Stories",
                 desc: "Celebrating the achievements and impact of Ghanaian healthcare professionals in the NHS.",
                 link: "/stories",
-                img: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2070&auto=format&fit=crop"
+                img: "https://images.pexels.com/photos/6129506/pexels-photo-6129506.jpeg?auto=compress&cs=tinysrgb&w=1600"
               }
             ].map((item, i) => (
               <motion.div
@@ -93,19 +91,21 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="group cursor-pointer"
+                className="group"
               >
-                <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 shadow-2xl shadow-primary/5">
-                  <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-brand-black/20 to-transparent" />
-                  <div className="absolute bottom-8 left-8 right-8">
-                    <h3 className="text-2xl font-black text-white mb-2">{item.title}</h3>
-                    <p className="text-white/70 text-sm font-medium mb-6 leading-relaxed">{item.desc}</p>
-                    <div className="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 group-hover:bg-secondary group-hover:border-secondary transition-all">
-                      Learn More <ArrowUpRight size={14} />
+                <Link to={item.link} className="block">
+                  <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 shadow-2xl shadow-primary/5">
+                    <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-brand-black/20 to-transparent" />
+                    <div className="absolute bottom-8 left-8 right-8">
+                      <h3 className="text-2xl font-black text-white mb-2">{item.title}</h3>
+                      <p className="text-white/70 text-sm font-medium mb-6 leading-relaxed">{item.desc}</p>
+                      <div className="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 group-hover:bg-secondary group-hover:border-secondary transition-all">
+                        Learn More <ArrowUpRight size={14} />
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="relative z-10 rounded-[4rem] overflow-hidden shadow-3xl shadow-primary/10 border-8 border-white"
               >
-                <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=2070&auto=format&fit=crop" alt="Nurse professionalism" className="w-full aspect-[4/5] object-cover" />
+                <img src="https://images.pexels.com/photos/18788957/pexels-photo-18788957.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Confident Ghanaian healthcare professional" className="w-full aspect-[4/5] object-cover" />
               </motion.div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/5 rounded-full blur-[100px] -z-10" />
             </div>
@@ -229,7 +229,7 @@ export default function Home() {
               Together.
             </h2>
             <p className="text-2xl md:text-3xl text-text-muted font-bold max-w-2xl mx-auto leading-tight italic font-serif">
-              "Wo ho na wo fie" — You are your own home.
+              "Wo ho na wo fie" — Your home is where you are.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8">
               <Button asChild size="lg" className="rounded-full px-16 h-20 text-2xl font-black bg-secondary text-brand-black hover:bg-secondary/90 transition-all shadow-2xl shadow-secondary/20">

@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Target, Heart, Users, Globe, Award, Shield } from 'lucide-react';
+import { Target, Users, Globe } from 'lucide-react';
 import Logo from '../components/Logo';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
@@ -43,7 +43,7 @@ export default function About() {
           </div>
           <div className="lg:w-1/2 relative">
              <div className="aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl relative z-10 border-8 border-white">
-                <img src="https://images.unsplash.com/photo-1579156412503-f22426cc63cf?q=80&w=2070&auto=format&fit=crop" alt="Team" className="w-full h-full object-cover" />
+                <img src="https://images.pexels.com/photos/5430213/pexels-photo-5430213.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Ghanaian nurse smiling in blue scrubs" className="w-full h-full object-cover object-[center_30%]" />
              </div>
              <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10" />
           </div>

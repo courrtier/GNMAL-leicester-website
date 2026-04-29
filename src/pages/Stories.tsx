@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Quote, ArrowUpRight, Award } from 'lucide-react';
+import { Quote, Award } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -10,21 +10,21 @@ export default function Stories() {
       role: "Advanced Nurse Practitioner",
       hospital: "Leicester Royal Infirmary",
       quote: "A person needs another person. GNMAL Leicester lives this proverb every single day. The community gave me the courage to pursue my advanced practice role.",
-      img: "https://images.unsplash.com/photo-1543333991-a750c010a704?q=80&w=2670&auto=format&fit=crop"
+      img: "https://images.pexels.com/photos/5722166/pexels-photo-5722166.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       name: "Dr. Kofi Mensah",
       role: "Senior Consultant",
       hospital: "Glenfield Hospital",
       quote: "The GNMAL mentorship program is a cornerstone of professional growth in this region. Bridging heritage and excellence is what makes us distinctive.",
-      img: "https://images.unsplash.com/photo-1559839734-2b71f1536783?q=80&w=2070&auto=format&fit=crop"
+      img: "https://images.pexels.com/photos/4989165/pexels-photo-4989165.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       name: "Serwaa Ababio",
       role: "Midwife",
       hospital: "Leicester General",
       quote: "As a newly arrived midwife from Ghana, the association was my family away from home. They helped me navigate the NHS with confidence.",
-      img: "https://images.unsplash.com/photo-1579156412503-f22426cc63cf?q=80&w=2070&auto=format&fit=crop"
+      img: "https://images.pexels.com/photos/19963183/pexels-photo-19963183.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
   ];
 
@@ -56,7 +56,7 @@ export default function Stories() {
         <div className="container mx-auto px-6 md:px-12">
             <div className="bg-primary rounded-[4rem] text-white overflow-hidden shadow-3xl shadow-primary/20 flex flex-col items-stretch lg:flex-row min-h-[600px] relative">
                <div className="lg:w-1/2 relative min-h-[400px]">
-                  <img src="https://images.unsplash.com/photo-1576091160550-2173bdb999ef?q=80&w=2070&auto=format&fit=crop" alt="Featured story" className="absolute inset-0 w-full h-full object-cover grayscale opacity-60" />
+                  <img src="https://images.pexels.com/photos/5452224/pexels-photo-5452224.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Featured GNMAL member" className="absolute inset-0 w-full h-full object-cover grayscale opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-transparent hidden lg:block" />
                </div>
                <div className="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center relative z-10">
@@ -100,8 +100,8 @@ export default function Stories() {
                   </div>
                   <div className="space-y-6">
                     <p className="text-xl text-text-muted font-medium italic leading-relaxed border-l-4 border-secondary pl-6">"{story.quote}"</p>
-                    <div className="flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest group-hover:text-secondary transition-colors cursor-pointer pl-6">
-                       Read Full Profile <ArrowUpRight size={16} />
+                    <div className="pl-6">
+                      <p className="text-sm font-bold text-text-muted">{story.hospital}</p>
                     </div>
                   </div>
                 </motion.div>

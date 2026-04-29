@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { BookOpen, Heart, Users, GraduationCap, Star, ArrowUpRight, ShieldCheck, ChevronRight } from 'lucide-react';
+import { BookOpen, GraduationCap, Star, ArrowUpRight, ShieldCheck, ChevronRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
 import Logo from '../components/Logo';
@@ -33,17 +33,17 @@ export default function Programs() {
     {
       title: "Nursing Home Visits",
       desc: "Providing companionship, cultural music, and storytelling for residents from the African diaspora in Leicester.",
-      img: "https://images.unsplash.com/photo-1543333991-a750c010a704?q=80&w=2670&auto=format&fit=crop"
+      img: "https://images.pexels.com/photos/33127693/pexels-photo-33127693.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       title: "Health Education",
       desc: "Culturally sensitive health talks on sickle cell, maternal health, and mental wellbeing at local events.",
-      img: "https://images.unsplash.com/photo-1581578731522-a0bcd4348b7b?q=80&w=2070&auto=format&fit=crop"
+      img: "https://images.pexels.com/photos/8248290/pexels-photo-8248290.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       title: "Homeless Outreach",
       desc: "Partnering with local food banks to provide hot meals and informal health support to the vulnerable.",
-      img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop"
+      img: "https://images.pexels.com/photos/8061641/pexels-photo-8061641.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
   ];
 

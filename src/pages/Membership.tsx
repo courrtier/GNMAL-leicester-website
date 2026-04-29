@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ShieldCheck, CheckCircle, CreditCard, Calendar, AlertCircle, ArrowRight } from 'lucide-react';
+import { ShieldCheck, CheckCircle, Calendar, AlertCircle, ArrowRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
 

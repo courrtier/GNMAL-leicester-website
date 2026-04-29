@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# GNMAL Leicester — Website
 
-# Run and deploy your AI Studio app
+Official website of the **Ghanaian Nurses & Midwives Association Leicester (CIC)**.
 
-This contains everything you need to run your app locally.
+Built with React, TypeScript, Vite and Tailwind CSS.
 
-View your app in AI Studio: https://ai.studio/apps/9bc5c791-b2a2-41fb-aa1c-b14038ab5a0e
+## Run locally
 
-## Run Locally
+**Prerequisites:** Node.js (LTS).
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+Then open http://localhost:3000.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Scripts
+
+- `npm run dev` — start the local dev server
+- `npm run build` — production build
+- `npm run preview` — preview the production build
+- `npm run lint` — type-check the project
+
+## Project structure
+
+```
+src/
+  pages/        Route components (Home, About, Programs, ...)
+  components/   Shared UI (Navigation, Footer, Logo)
+  components/ui Reusable primitives (Button, animations)
+public/
+  logo.png      Site logo / favicon
+  images/       Photos used on the site
+```

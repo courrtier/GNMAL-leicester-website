@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
-import { Heart, ShieldCheck, MessageCircle, Compass, Users, Award, BookOpen, Star, Anchor } from 'lucide-react';
-import { TextEffect } from '../components/ui/text-effect';
+import { Heart, ShieldCheck, MessageCircle, Compass, Award, Anchor } from 'lucide-react';
 
 export default function Values() {
   const sixCs = [

@@ -78,12 +78,12 @@ export default function Navigation() {
                         asChild
                         variant="ghost"
                         className="rounded-full px-6 font-bold text-primary hover:bg-accent transition-all h-11">
-                        <Link to="/contact">Member Login</Link>
+                        <Link to="/membership">Membership</Link>
                     </Button>
                     <Button
                         asChild
                         className="rounded-full px-8 font-bold h-11 bg-primary text-white hover:bg-primary-dark transition-all shadow-lg shadow-primary/10">
-                        <Link to="/contact">Get Started</Link>
+                        <Link to="/contact">Join the Family</Link>
                     </Button>
                 </div>
 
@@ -121,7 +121,7 @@ export default function Navigation() {
                             <Link to="/contact" onClick={() => setMenuState(false)}>Join the Family</Link>
                         </Button>
                         <Button asChild variant="outline" size="lg" className="w-full h-14 rounded-2xl text-lg font-bold border-primary/10 text-primary">
-                            <Link to="/contact" onClick={() => setMenuState(false)}>Member Login</Link>
+                            <Link to="/membership" onClick={() => setMenuState(false)}>View Membership</Link>
                         </Button>
                     </div>
                 </motion.div>
