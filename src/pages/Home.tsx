@@ -213,7 +213,7 @@ export default function Home() {
           </div>
           
           <div className="mt-20 text-center">
-             <Button asChild size="lg" variant="outline" className="rounded-full px-12 h-16 border-white/20 text-white hover:bg-white hover:text-brand-black transition-all font-black text-lg">
+             <Button asChild size="lg" variant="outline" className="rounded-full px-12 h-16 bg-transparent border-white/30 text-white hover:bg-white hover:text-brand-black transition-all font-black text-lg">
                <Link to="/programs">Explore Our Outreach</Link>
              </Button>
           </div>
