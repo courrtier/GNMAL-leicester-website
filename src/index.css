@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-primary: #0a6336; /* Brand Green */
+  --color-primary-dark: #074a28;
+  --color-secondary: #f0b217; /* Brand Gold */
+  --color-accent: #f2f2f2;
+  --color-brand-red: #c51d1e;
+  --color-brand-black: #111111;
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text-main: #111111;
+  --color-text-muted: #555555;
+  
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 3rem;
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-text-main antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans tracking-tight font-black;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.mask-soft {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
